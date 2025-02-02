@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".OutgoingCall">
+    <!-- Phone number display -->
+    <TextView
+        android:id="@+id/phoneNumberText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Timer -->
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- End call button -->
+    <Button
+        android:id="@+id/endCallButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End Call"
+        android:textSize="18sp"
+
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>

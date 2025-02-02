@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".phone.DialPadFragment">
+
+    <!-- Display Dialed Number -->
+    <TextView
+        android:id="@+id/tvPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:ellipsize="end" />
+
+    <!-- Number Pad -->
+
+
+    <com.google.android.material.circularreveal.CircularRevealGridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="4"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            style="@style/DialPadButton"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            style="@style/DialPadButton"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            style="@style/DialPadButton"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            style="@style/DialPadButton"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            style="@style/DialPadButton"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            style="@style/DialPadButton"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            style="@style/DialPadButton"
+            android:layout_rowWeight="1"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            style="@style/DialPadButton"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            style="@style/DialPadButton"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/btnStar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            style="@style/DialPadButton"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/btn0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            style="@style/DialPadButton"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/btnHash"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            style="@style/DialPadButton"
+            android:text="#" />
+
+    </com.google.android.material.circularreveal.CircularRevealGridLayout>
+
+    <!-- Bottom Action Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="16dp">
+
+        <!-- Call Button -->
+        <ImageButton
+            android:id="@+id/btnCall"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/call_button_bg"
+            android:src="@android:drawable/ic_menu_call"
+
+            android:scaleType="centerInside"
+            android:contentDescription="Call"
+            android:layout_marginStart="32dp"
+            app:tint="@android:color/white" />
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/call_button_bg"
+            android:src="@drawable/delete"
+            android:scaleType="centerInside"
+            android:contentDescription="Call"
+            android:layout_marginStart="32dp"
+            app:tint="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>
